@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+  public static void main(String[] args) {
+    // Initialize a List of Integers
+    List<Integer> myList = new ArrayList<>();
+    myList.add(1);
+    myList.add(2);
+    myList.add(3);
+    myList.add(4);
+    myList.add(5);
+
+    // Split the List into two halves
+    int middleIndex = myList.size() / 2;
+    List<Integer> firstHalf = myList.subList(0, middleIndex);
+    List<Integer> secondHalf = myList.subList(middleIndex, myList.size());
+
+    // Print the two halves
+    System.out.println("First Half: " + firstHalf);
+    System.out.println("Second Half: " + secondHalf);
+  }
+}
